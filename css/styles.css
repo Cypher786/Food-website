@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*nav-Section*/
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.logo img{
+    height: 56px;
+    margin: 6px 10px;
+}
+.logo {
+    margin: 10px 11px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 20px;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    font-family: 'Arvo', serif;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+/*Home-section*/
+
+#Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 625px;
+}
+
+#Home::before {
+    content: "";
+    background: url('../images/fooditems.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 75%;
+    width: 100%;
+    z-index: -2;
+    
+}
+
+#Home h1{
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+
+#Home p {
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+}
+
+/*service-section*/
+
+#services {
+    margin: 18px;
+    display: flex;
+
+}
+
+#services .box {
+    border: 2px solid rgb(68 227 34);
+    padding: 34px;
+    margin: 3px 40px;
+    border-radius: 28px;
+    background-color: #e5fde2;
+    margin-bottom: 25px;
+
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+
+}
+
+/*Client-Section*/
+#client-section {
+    height: 400px;
+
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.client-item img{
+    height: 70px;
+    padding: 34px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../images/background-2.jpg');
+    width: 100%;
+    height: 36%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+/*Contact-section*/
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-box form {
+    width: 30%;
+
+
+}
+
+
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Arvo', serif;
+}
+
+#contact {
+    position: relative;  
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url('../images/contact-us.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+#contact-box input,
+#contact-box textarea {
+width: 100%;
+padding: 0.5rem;
+font-size: 1.3rem;
+border-radius: 9px;
+
+}
+
+
+
+
+footer {
+    background-color: #1ead00b3;
+    color: white;
+    padding: 9px 20px;
+}
+
+/*utitility Classes*/
+.h-primary {
+    font-size: 3.4rem;
+    padding: 3px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Courgette', cursive;
+}
+
+.btn {
+    margin: 13px;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: 'Arvo', serif;
+    border-color: white;
+    background-color: #39c31bb3;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+p {
+    font-family: 'Arvo', serif;
+
+}
+
+.center {
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    margin-bottom: 3em;
+    width: 4%;
+    border: 2px solid #abe1ad;
+    border-style: dotted;
+    border-width: 6px;
+    border-bottom: 0px
+}
+
